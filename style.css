@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0
+}
+
+@font-face {
+    font-family: 'CashMarket';
+    src: url('/fonts/CashMarket-BoldRounded.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Utendo';
+    src: url('/fonts/Utendo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: #5C3E94;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+header .logo {
+    width: 4%;
+    height: auto;
+}
+
+header h1 {
+    font-family: 'CashMarket';
+    color: white
+}
+
+main {
+    background-color: #15151C;
+    padding-left: 5%;
+    padding-right: 5%;
+    color: white
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5C3E94;
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+footer p {
+    margin: 0;
+    margin-right: 5px;
+}
