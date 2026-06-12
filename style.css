@@ -1,6 +1,7 @@
 * {
     margin: 0;
-    padding: 0
+    padding: 0;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -29,8 +30,8 @@ header {
     background-color: #5C3E94;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 header .logo {
@@ -52,16 +53,142 @@ main {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: #5C3E94;
     color: white;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-footer p {
+footer .informacion {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3%;
+}
+
+footer .logoTitulo {
+    text-align: center;
+}
+
+footer .logoTitulo h1 {
+    font-family: 'CashMarket';
+    font-size: xx-large !important;
+    margin-bottom: 0 !important;
+}
+
+footer .logoTitulo p {
+    font-family: 'Utendo';
+}
+
+footer .logo {
+    width: 50%;
+    height: auto;
+}
+
+footer .ayuda a {
+    color: white;
+}
+
+footer .ayuda ul {
+    list-style-type: none;
+}
+
+footer .ayuda li {
+    margin-bottom: 1%;
+}
+
+footer .informacion h1 {
+    font-family: 'CashMarket';
+    font-size: x-large;
+    margin-bottom: 3%;
+}
+
+footer .informacion a {
+    font-family: 'Utendo';
+}
+
+footer .informacion a:hover,
+footer .copyright a:hover {
+    text-decoration: none;
+}
+
+footer .contacto div,
+footer .redesSociales div {
+    display: flex;
+}
+
+footer .contacto img,
+footer .redesSociales img {
+    width: 10%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+}
+
+footer .contacto a {
+    color: white;
+    margin-top: 2px;
+}
+
+footer .redesSociales a {
+    color: white;
+    margin-top: 4px;
+}
+
+.botonInstalar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #57C7A3;
+    border-radius: 10px;
+    padding: 2%;
+    margin-bottom: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botonInstalar img {
+    width: 28px;
+    height: 28px;
+}
+
+.botonInstalar p {
     margin: 0;
+    color: black;
+    font-family: 'CashMarket';
+}
+
+.botonInstalar:hover {
+    text-decoration: underline !important;
+}
+
+footer .copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Utendo';
+    margin-top: 1%;
+}
+
+footer .copyright p {
+    margin-right: 5px;
+}
+
+footer .legal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Utendo';
+    margin-top: 2px;
+}
+
+footer .legal a {
+    color: white
+}
+
+footer .legal a:first-child {
     margin-right: 5px;
 }
