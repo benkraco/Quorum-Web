@@ -29,11 +29,14 @@ header {
     background-color: #5C3E94;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
 header .logo {
     width: 4%;
     height: auto;
+    margin-right: 1%;
 }
 
 header h1 {
