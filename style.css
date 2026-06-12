@@ -57,16 +57,30 @@ footer {
     color: white;
     padding-left: 5%;
     padding-right: 5%;
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
 }
 
 footer .informacion {
     width: 100%;
     display: grid;
-    grid-template-rows: 1fr;
     grid-template-columns: repeat(5, 1fr);
     gap: 3%;
+}
+
+footer .columnaFooter h1 {
+    font-family: 'CashMarket';
+    font-size: x-large;
+    margin-bottom: 3%;
+}
+
+footer .columnaFooter a {
+    font-family: 'Utendo';
+}
+
+footer .columnaFooter a:hover,
+footer .copyright a:hover {
+    text-decoration: none;
 }
 
 footer .logoTitulo {
@@ -88,52 +102,39 @@ footer .logo {
     height: auto;
 }
 
-footer .ayuda a {
-    color: white;
-}
-
 footer .ayuda ul {
-    list-style-type: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 footer .ayuda li {
     margin-bottom: 1%;
 }
 
-footer .informacion h1 {
-    font-family: 'CashMarket';
-    font-size: x-large;
-    margin-bottom: 3%;
+footer .ayuda a {
+    color: white;
 }
 
-footer .informacion a {
-    font-family: 'Utendo';
-}
-
-footer .informacion a:hover,
-footer .copyright a:hover {
-    text-decoration: none;
-}
-
-footer .contacto div,
-footer .redesSociales div {
+footer .itemFooter {
     display: flex;
 }
 
-footer .contacto img,
-footer .redesSociales img {
+footer .itemFooter img {
     width: 10%;
     margin-right: 2%;
     margin-bottom: 1%;
 }
 
-footer .contacto a {
+footer .itemFooter a {
     color: white;
+}
+
+footer .contacto .itemFooter a {
     margin-top: 2px;
 }
 
-footer .redesSociales a {
-    color: white;
+footer .redesSociales .itemFooter a {
     margin-top: 4px;
 }
 
@@ -142,10 +143,13 @@ footer .redesSociales a {
     justify-content: center;
     align-items: center;
     gap: 8px;
+
     background-color: #57C7A3;
     border-radius: 10px;
+
     padding: 2%;
     margin-bottom: 15px;
+
     text-decoration: none;
     cursor: pointer;
 }
@@ -165,30 +169,33 @@ footer .redesSociales a {
     text-decoration: underline !important;
 }
 
-footer .copy {
+footer .footerFila {
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Utendo';
+}
+
+footer .copy {
     margin-top: 1%;
 }
 
-footer .copyright p {
-    margin-right: 5px;
+footer .copy p {
+    margin: 0;
 }
 
 footer .legal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Utendo';
     margin-top: 2px;
 }
 
 footer .legal a {
-    color: white
+    color: white;
 }
 
 footer .legal a:first-child {
     margin-right: 5px;
+}
+
+footer .legal p {
+    margin: 0 5px;
 }
