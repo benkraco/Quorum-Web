@@ -52,9 +52,60 @@ header .offcanva {
 
 main {
     background-color: #15151C;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding: 5%;
     color: white
+}
+
+#introduccion {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    align-items: center;
+}
+
+.info {
+    max-width: 650px;
+    text-align: left;
+}
+
+.tituloIntro {
+    font-family: 'CashMarket';
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.tituloTurquesa {
+    color: #57C7A3;
+}
+
+.textInfo {
+    font-family: 'Utendo';
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+.ctaInstalar {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.ctaInstalar .botonInstalar {
+    padding: 12px 20px;
+}
+
+.imagenCelular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagenCelular img {
+    width: 85%;
+    max-width: 400px;
+    height: auto;
 }
 
 footer {
@@ -172,6 +223,7 @@ footer .redesSociales .itemFooter a {
 
 .botonInstalar:hover {
     text-decoration: underline !important;
+    color: black;
 }
 
 footer .footerFila {
@@ -181,16 +233,9 @@ footer .footerFila {
     font-family: 'Utendo';
 }
 
-footer .copy {
-    margin-top: 1%;
-}
 
 footer .copy p {
     margin: 0;
-}
-
-footer .legal {
-    margin-top: 2px;
 }
 
 footer .legal a {
@@ -219,6 +264,37 @@ footer .legal p {
         background: none;
         border: none;
     }
+
+    #introduccion {
+        display: flex;
+    }
+
+    .tituloIntro,
+    .textInfo {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 5%;
+    }
+
+    .imagenCelular {
+        display: none;
+    }
+
+    .ctaInstalar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+
+    .ctaInstalar .botonInstalar {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .botonInstalar p {
+        font-size: large;
+    }
+
 
     .offcanva a img {
         width: 40px;
