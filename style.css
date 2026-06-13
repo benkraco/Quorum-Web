@@ -42,7 +42,12 @@ header .logo {
 
 header h1 {
     font-family: 'CashMarket';
-    color: white
+    color: white;
+}
+
+header .offcanva {
+    margin-left: auto;
+    display: none;
 }
 
 main {
@@ -192,10 +197,44 @@ footer .legal a {
     color: white;
 }
 
-footer .legal a:first-child {
-    margin-right: 5px;
-}
-
 footer .legal p {
     margin: 0 5px;
+}
+
+@media (max-width: 600px) {
+    header .logo {
+        width: 15%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header .offcanva {
+        display: block !important;
+    }
+
+    .offcanva a {
+        padding: 0;
+        background: none;
+        border: none;
+    }
+
+    .offcanva a img {
+        width: 40px;
+        height: 40px;
+        display: block;
+    }
+
+    #offcanvasExample {
+        background-color: #15151C;
+    }
+
+    .offcanvas-header h5 {
+        color: white
+    }
+
+    footer {
+        display: none;
+    }
 }
