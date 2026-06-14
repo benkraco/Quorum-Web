@@ -56,6 +56,14 @@ main {
     color: white
 }
 
+main section {
+    margin-bottom: 5%;
+}
+
+main section:last-child {
+    margin-bottom: 0%;
+}
+
 #introduccion {
     width: 100%;
     display: grid;
@@ -64,7 +72,7 @@ main {
 }
 
 .info {
-    max-width: 650px;
+    max-width: 700px;
     text-align: left;
 }
 
@@ -104,8 +112,45 @@ main {
 
 .imagenCelular img {
     width: 85%;
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
+}
+
+.tituloProblem {
+    text-align: center;
+    font-family: 'CashMarket';
+}
+
+.tituloProblem span {
+    color: #57C7A3;
+}
+
+.cardsProblem {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+.cardProblema {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: #27272f;
+    padding: 1%;
+    border-radius: 15px;
+}
+
+.cardProblema h1 {
+    font-size: x-large;
+    font-family: 'CashMarket';
+}
+
+.cardProblema p {
+    font-family: 'Utendo';
+    margin: 0;
 }
 
 footer {
@@ -295,6 +340,14 @@ footer .legal p {
         font-size: large;
     }
 
+    .cardsProblem {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        margin-top: 5%;
+    }
 
     .offcanva a img {
         width: 40px;
