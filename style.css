@@ -183,6 +183,36 @@ main section:last-child {
     margin-top: 2.5%;
 }
 
+.explainFunc p {
+    text-align: center;
+}
+
+.cardPaso {
+    position: relative;
+    text-align: center;
+    background-color: #27272f;
+    border-radius: 15px;
+}
+
+.cardPaso img {
+    margin-top: 10%;
+}
+
+.numeroPaso {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5C3E94;
+    font-family: 'CashMarket';
+}
+
 footer {
     background-color: #5C3E94;
     color: white;
