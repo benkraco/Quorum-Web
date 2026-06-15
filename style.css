@@ -153,6 +153,36 @@ main section:last-child {
     margin: 0;
 }
 
+.cardProblema img {
+    width: 20%;
+}
+
+.solucion {
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    align-items: center;
+}
+
+.solucionText h1 {
+    font-family: 'CashMarket';
+}
+
+.solucionText h1 {
+    font-family: 'CashMarket';
+}
+
+.solucionText span {
+    color: #57C7A3;
+}
+
+.solucionText p {
+    font-family: 'Utendo';
+    margin-top: 2.5%;
+}
+
 footer {
     background-color: #5C3E94;
     color: white;
