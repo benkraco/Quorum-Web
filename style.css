@@ -4,6 +4,29 @@
     box-sizing: border-box;
 }
 
+/* Animación Fade In */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 @font-face {
     font-family: 'CashMarket';
     src: url('/fonts/CashMarket-BoldRounded.ttf') format('truetype');
