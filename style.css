@@ -80,7 +80,7 @@ main {
 }
 
 main section {
-    margin-bottom: 5%;
+    margin-bottom: 8%;
 }
 
 main section:last-child {
@@ -302,24 +302,18 @@ footer .ayuda a {
 
 footer .itemFooter {
     display: flex;
+    margin-bottom: 3px;
 }
 
 footer .itemFooter img {
-    width: 10%;
+    width: 25px;
+    height: auto;
     margin-right: 2%;
     margin-bottom: 1%;
 }
 
 footer .itemFooter a {
     color: white;
-}
-
-footer .contacto .itemFooter a {
-    margin-top: 2px;
-}
-
-footer .redesSociales .itemFooter a {
-    margin-top: 4px;
 }
 
 .botonInstalar {
