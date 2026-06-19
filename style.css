@@ -50,7 +50,9 @@ body {
 header {
     display: flex;
     align-items: center;
-    background-color: #5C3E94;
+    background: linear-gradient(1000deg,
+            #5C3E94,
+            #6D4DB5);
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 5px;
@@ -80,7 +82,7 @@ main {
 }
 
 main section {
-    margin-bottom: 8%;
+    margin-bottom: 10%;
 }
 
 main section:last-child {
@@ -133,6 +135,7 @@ main section:last-child {
     align-items: center;
 }
 
+
 .imagenCelular img {
     width: 85%;
     max-width: 450px;
@@ -164,6 +167,8 @@ main section:last-child {
     background-color: #27272f;
     padding: 1%;
     border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+    border: 1px solid rgba(255, 255, 255, .05);
 }
 
 .cardProblema h1 {
@@ -210,15 +215,33 @@ main section:last-child {
     text-align: center;
 }
 
+.cardProblema:hover,
+.cardPaso:hover {
+    transform: translateY(-6px);
+    transition: .3s;
+}
+
 .cardPaso {
     position: relative;
     text-align: center;
     background-color: #27272f;
     border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+    border: 1px solid rgba(255, 255, 255, .05);
 }
 
 .cardPaso img {
+    width: 50%;
     margin-top: 10%;
+}
+
+.cardPaso h1 {
+    font-family: 'CashMarket';
+    font-size: xx-large;
+}
+
+.cardPaso p {
+    font-family: 'Utendo';
 }
 
 .numeroPaso {
@@ -237,15 +260,22 @@ main section:last-child {
 }
 
 .cta {
-    background: #57C7A3;
+    background:
+        linear-gradient(135deg,
+            #57C7A3,
+            #6BD7B4);
     padding: 50px;
     text-align: center;
     border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+    border: 1px solid rgba(255, 255, 255, .05);
 }
 
 .cta p {
     max-width: 800px;
     margin: 0 auto 35px auto;
+    font-family: 'Utendo';
+    color: black;
 }
 
 .ctaEmail {
@@ -296,7 +326,7 @@ main section:last-child {
 
 .cta h1 {
     font-family: 'CashMarket';
-    color: white;
+    color: black;
     margin-bottom: 20px;
 }
 
@@ -323,7 +353,7 @@ main section:last-child {
 
     z-index: 9999;
 
-    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .25);
 }
 
 .mensaje.mostrar {
@@ -343,7 +373,16 @@ main section:last-child {
 }
 
 footer {
-    background-color: #5C3E94;
+    background:
+        radial-gradient(circle at top right,
+            rgba(87, 199, 163, .12),
+            transparent 35%),
+        linear-gradient(1000deg,
+            #5C3E94,
+            #6D4DB5);
+
+    box-shadow:
+        0 -10px 40px rgba(92, 62, 148, .25);
     color: white;
     padding-left: 5%;
     padding-right: 5%;
@@ -356,6 +395,7 @@ footer .informacion {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 3%;
+    padding: 30px 0;
 }
 
 footer .columnaFooter h1 {
