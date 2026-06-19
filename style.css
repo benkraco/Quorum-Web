@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-/* Animación Fade In */
 @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -234,6 +234,112 @@ main section:last-child {
     align-items: center;
     background-color: #5C3E94;
     font-family: 'CashMarket';
+}
+
+.cta {
+    background: #57C7A3;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.cta p {
+    max-width: 800px;
+    margin: 0 auto 35px auto;
+}
+
+.ctaEmail {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+.ctaEmail input {
+    width: 350px;
+    padding: 16px 20px;
+    border: 2px solid #726C79;
+    border-radius: 12px;
+    background-color: #373749;
+    color: white;
+    font-family: 'Utendo';
+    font-size: 1rem;
+    outline: none;
+    transition: .2s;
+}
+
+.ctaEmail input:focus {
+    border-color: #5C3E94;
+    box-shadow: 0 0 0 4px rgba(92, 62, 148, .25);
+}
+
+.ctaEmail input::placeholder {
+    color: #B5B5C3;
+}
+
+.ctaEmail button {
+    padding: 16px 24px;
+    border: none;
+    border-radius: 12px;
+    background-color: #5C3E94;
+    color: white;
+    font-family: 'Utendo';
+    font-size: medium;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.ctaEmail button:hover {
+    transform: translateY(-2px);
+}
+
+.cta h1 {
+    font-family: 'CashMarket';
+    color: white;
+    margin-bottom: 20px;
+}
+
+.mensaje {
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%) translateY(-15px);
+
+    min-width: 320px;
+    max-width: 90vw;
+
+    padding: 16px 24px;
+    border-radius: 12px;
+
+    font-family: 'Utendo';
+    font-size: 1rem;
+    text-align: center;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all .3s ease;
+
+    z-index: 9999;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,.25);
+}
+
+.mensaje.mostrar {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.mensaje.exito {
+    background-color: #2ECC71;
+    color: white;
+}
+
+.mensaje.error {
+    background-color: #E74C3C;
+    color: white;
 }
 
 footer {
