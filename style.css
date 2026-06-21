@@ -561,6 +561,13 @@ footer .legal p {
 
     #introduccion {
         display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .info {
+        max-width: 100%;
     }
 
     .tituloIntro,
@@ -571,7 +578,13 @@ footer .legal p {
     }
 
     .imagenCelular {
-        display: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .imagenCelular img {
+        width: 100%;
+        max-width: 280px;
     }
 
     .ctaInstalar {
@@ -580,13 +593,41 @@ footer .legal p {
         gap: 8px;
     }
 
-    .ctaInstalar .botonInstalar {
+    .botonWishlist {
         width: 100%;
-        justify-content: center;
+        padding: 18px;
+        font-size: 1.2rem;
     }
 
-    .botonInstalar p {
-        font-size: large;
+    .cardProblema {
+        padding: 20px;
+    }
+
+    .cardProblema img {
+        width: 50px;
+    }
+
+    .cardPaso {
+        padding: 40px 20px;
+    }
+
+    .cardPaso img {
+        width: 120px;
+        margin-top: 30px;
+    }
+
+    .cardPaso h1 {
+        font-size: 2rem;
+    }
+
+    .cardPaso p {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .numeroPaso {
+        width: 45px;
+        height: 45px;
     }
 
     .cardsProblem {
@@ -609,6 +650,28 @@ footer .legal p {
 
     .solucion div img {
         display: none;
+    }
+
+    .cta {
+        padding: 30px 20px;
+    }
+
+    .ctaEmail {
+        flex-direction: column;
+    }
+
+    .ctaEmail button,
+    .ctaEmail input {
+        width: 100%;
+        max-width: none;
+    }
+
+    .tituloProblem {
+        margin-bottom: 20px;
+    }
+
+    .explainFunc>p {
+        margin-bottom: 40px;
     }
 
     .offcanva a img {
