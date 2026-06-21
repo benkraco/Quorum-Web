@@ -42,13 +42,17 @@
 }
 
 html {
+    width: 100%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
+    width: 100%;
     display: grid;
     min-height: 100dvh;
     grid-template-rows: auto 1fr auto;
+    overflow-x: hidden;
 }
 
 header {
@@ -151,13 +155,10 @@ main section:last-child {
     justify-content: center;
     align-items: center;
     gap: 8px;
-
     background-color: #57C7A3;
     border-radius: 10px;
-
     padding: 2%;
     margin-bottom: 15px;
-
     text-decoration: none;
     cursor: pointer;
 }
@@ -182,19 +183,13 @@ main section:last-child {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-
     padding: 16px 32px;
-
     background-color: #57C7A3;
     color: #15151C;
-
     border-radius: 14px;
-
     font-family: 'CashMarket';
     font-size: 1.1rem;
-
     text-decoration: none;
-
     transition: all .2s ease;
 }
 
@@ -275,6 +270,7 @@ main section:last-child {
 }
 
 .explainFunc p {
+    font-family: 'Utendo';
     text-align: center;
 }
 
@@ -350,7 +346,8 @@ main section:last-child {
 }
 
 .ctaEmail input {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     padding: 16px 20px;
     border: 2px solid #726C79;
     border-radius: 12px;
@@ -601,6 +598,19 @@ footer .legal p {
         gap: 20px;
         justify-content: space-between;
         margin-top: 5%;
+    }
+
+    .solucion {
+        display: flex;
+        text-align: center;
+    }
+
+    .solucionText h1 {
+        margin-bottom: 5%;
+    }
+
+    .solucion div img {
+        display: none;
     }
 
     .offcanva a img {
