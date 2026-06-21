@@ -628,4 +628,10 @@ footer .legal p {
     footer {
         display: none;
     }
+
+    .fade-in {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
 }
