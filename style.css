@@ -51,6 +51,9 @@ body {
     width: 100%;
     min-height: 100vh;
     overflow-x: hidden;
+    display: grid;
+    min-height: 100dvh;
+    grid-template-rows: auto 1fr auto;
 }
 
 header {
@@ -697,4 +700,59 @@ footer .legal p {
         transform: none !important;
         transition: none !important;
     }
+
+    .error404 {
+        min-height: 60vh;
+    }
+
+    .error404Logo {
+        width: 90px;
+    }
+
+    .error404 p {
+        font-size: 1rem;
+    }
+
+}
+
+.error404 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 700px;
+    margin: auto;
+}
+
+.error404Logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.error404 h1 {
+    font-family: 'CashMarket';
+    font-size: clamp(5rem, 15vw, 7rem);
+    color: #57C7A3;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.error404 h2 {
+    font-family: 'CashMarket';
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin-bottom: 20px;
+}
+
+.error404 h2 span {
+    color: #57C7A3;
+}
+
+.error404 p {
+    font-family: 'Utendo';
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 550px;
+    margin-bottom: 35px;
 }
