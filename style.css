@@ -72,6 +72,11 @@ header .logo {
     width: 4%;
     height: auto;
     margin-right: 1%;
+    transition: .3s;
+}
+
+header .logo:hover {
+    transform: rotate(-8deg);
 }
 
 header h1 {
@@ -85,9 +90,9 @@ header .offcanva {
 }
 
 main {
-    background-color: #15151C;
+    background: #15151C;
     padding: 5%;
-    color: white
+    color: white;
 }
 
 main section {
@@ -228,6 +233,7 @@ main section:last-child {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
     border: 1px solid rgba(255, 255, 255, .05);
+
 }
 
 .cardProblema h1 {
@@ -245,29 +251,86 @@ main section:last-child {
 }
 
 .solucion {
-    width: 100%;
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
     align-items: center;
 }
 
-.solucionText h1 {
-    font-family: 'CashMarket';
+.solucionImagen {
+    display: flex;
+    justify-content: center;
 }
 
-.solucionText h1 {
-    font-family: 'CashMarket';
+.solucionImagen img {
+    width: 100%;
+    max-width: 620px;
 }
 
-.solucionText span {
-    color: #57C7A3;
+.solucionText {
+    display: flex;
+    flex-direction: column;
 }
 
-.solucionText p {
+.miniTitulo {
     font-family: 'Utendo';
-    margin-top: 2.5%;
+    color: #57C7A3;
+    font-size: .9rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.solucionText h1 {
+    font-family: 'CashMarket';
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.solucionText>p {
+    font-family: 'Utendo';
+    color: #D7D7D7;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 35px;
+}
+
+.beneficios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.beneficio {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #27272f;
+    border-radius: 16px;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, .05);
+    transition: .25s;
+}
+
+.beneficio:hover {
+    transform: translateY(-4px);
+}
+
+.beneficio img {
+    width: 42px;
+}
+
+.beneficio h3 {
+    font-family: 'CashMarket';
+    font-size: 1.1rem;
+    margin-bottom: 6px;
+}
+
+.beneficio p {
+    margin: 0;
+    font-family: 'Utendo';
+    color: #BEBEC8;
+    font-size: .95rem;
 }
 
 .explainFunc p {
@@ -275,10 +338,15 @@ main section:last-child {
     text-align: center;
 }
 
+.cardProblema,
+.cardPaso {
+    transition: .3s;
+}
+
 .cardProblema:hover,
 .cardPaso:hover {
-    transform: translateY(-6px);
-    transition: .3s;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0, 0, 0, .4);
 }
 
 .cardPaso {
@@ -317,6 +385,7 @@ main section:last-child {
     align-items: center;
     background-color: #5C3E94;
     font-family: 'CashMarket';
+    box-shadow: 0 0 30px rgba(92, 62, 148, .35);
 }
 
 .cta {
@@ -379,6 +448,8 @@ main section:last-child {
     font-size: medium;
     cursor: pointer;
     transition: .2s;
+    font-weight: bold;
+    letter-spacing: .4px;
 }
 
 .ctaEmail button:hover {
