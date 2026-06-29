@@ -225,7 +225,7 @@ main section:last-child {
 
 .cardProblema {
     display: flex;
-    align-items: center;
+align-items:flex-start;
     justify-content: center;
     gap: 20px;
     background-color: #27272f;
